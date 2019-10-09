@@ -35,7 +35,7 @@
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper head-container">
+        <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
@@ -258,7 +258,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #000;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -615,7 +615,7 @@
             <a  href="/categories/index.html">
                     《categories》
             </a> 由
-            <a href="http://yoursite.com">
+            <a href="https://linjinglj.github.io">
                 一夏
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">
@@ -840,9 +840,8 @@
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">年份</span>
-            <span id="sitetime"></span>
-            <a href="http://yoursite.com" target="_blank">一夏</a>
+            <span id="year">年份</span>&nbsp;
+            <a href="https://linjinglj.github.io" target="_blank">一夏</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">YiXia</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -896,23 +895,31 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
+    <a href="https://github.com/linjinglj" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
     </a>
+
+
+
+    <a href="mailto:1076115985@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1076115985" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1076115985" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
 
 </div>
     </div>
@@ -942,6 +949,7 @@
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours); 
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes); 
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds); document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; 
+        document.getElementById("year").innerHTML = todayYear;
     } 
     siteTime(); 
 </script>

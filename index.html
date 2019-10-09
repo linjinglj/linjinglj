@@ -35,7 +35,7 @@
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper head-container">
+        <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
@@ -258,7 +258,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #000;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -377,7 +377,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
                 <script>
                     var typed = new Typed("#typed", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途', 'Never really desperate, only the lost of the soul'],
+                        strings: ['如果不出发，就永远不知道你能走多远', 'If you don&#39;t start, you never know how far you can go.'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -405,29 +405,37 @@
                 </a>
 
                 
-                <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fab fa-github-alt"></i>Github
+                <a href="/about" class="waves-effect waves-light btn" target="_blank">
+                    <i class="fab fa-github-alt"></i>关于我
                 </a>
                 
             </div>
             <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
+    <a href="https://github.com/linjinglj" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
     </a>
+
+
+
+    <a href="mailto:1076115985@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1076115985" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1076115985" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
 
 </div>
         </div>
@@ -570,9 +578,8 @@ $(function () {
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">年份</span>
-            <span id="sitetime"></span>
-            <a href="http://yoursite.com" target="_blank">一夏</a>
+            <span id="year">年份</span>&nbsp;
+            <a href="https://linjinglj.github.io" target="_blank">一夏</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">YiXia</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -626,23 +633,31 @@ $(function () {
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
+    <a href="https://github.com/linjinglj" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
     </a>
+
+
+
+    <a href="mailto:1076115985@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1076115985" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1076115985" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
 
 </div>
     </div>
@@ -672,6 +687,7 @@ $(function () {
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours); 
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes); 
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds); document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; 
+        document.getElementById("year").innerHTML = todayYear;
     } 
     siteTime(); 
 </script>
