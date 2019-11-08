@@ -1121,8 +1121,14 @@ table tr:nth-child(2n), thead {
     min-width: 80px;
 }
 
+#articleContent table td.gutter {
+    display: none;
+}
+
 #articleContent table td {
     min-width: 80px;
+    max-width: 718px;
+    color: #95a8ba;
 }
 
 #articleContent [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
